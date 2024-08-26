@@ -96,7 +96,7 @@ const Column: React.FC<ColumnProps> = ({ id, title, cards, currentIndex }) => {
     }, [isAddingCard]);
 
     const onKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
-        if (e.key === 'enter') {
+        if (e.key === 'Enter') {
             e.preventDefault();
             setIsEditing(false);
             updateColumn(id, currentTitle);
